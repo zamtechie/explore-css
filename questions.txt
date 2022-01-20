@@ -1,0 +1,10 @@
+CSS
+---
+
+1.  What is Box Model in css
+    - 'Box Model is essentially a box wrapped around every HTML element.
+      It consist of margin, border, padding and the actual content
+      1.  Margin: Is the space between the current element and neibouring elements and it is transparent
+      2.  Border: It goes around the padding and actual content, its between Margin and Padding.
+      3.  Padding: Padding is the space between the actual content and margin, it is transparent
+      4.  Content: It is the content of the box where text or image is displayed.
