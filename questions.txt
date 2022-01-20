@@ -8,3 +8,29 @@ CSS
       2.  Border: It goes around the padding and actual content, its between Margin and Padding.
       3.  Padding: Padding is the space between the actual content and margin, it is transparent
       4.  Content: It is the content of the box where text or image is displayed.
+
+2.  What are CSS positions?
+    - position property specifies types of positioning method is used for an element.
+    - There are 5 types of positions:
+      1.  static: It is default position and it is not affected by top, bottom, left and right properties.
+      2.  relative: Elements are position relative to its normal position. Other content cannot be fitted in gaps left 
+                    by these elements.
+      3.  absolute: It is positioned to the nearest positioned element acestor, if there is not positioned acestor element
+                    then it uses the document body and moves along with page scroll
+                    Absolute element are removed from normal flow and can overlap elements.
+      4.  fixed:  It position the elements relative to viewport, which means it will stay at its position even if we scroll
+                  the page
+      5.  sticky: It position the elements based on user scroll. It toggles element's position between the relative and fixed
+                  depending upon the scroll. 
+                  Its position is relative till its position is met the viewport and then sticks in the place.
+
+3.  Capitalize first character of each word 'center me'
+
+4.  What is the default font-size of text in webpage?
+5.  What new feature introduced in CSS3
+6.  Difference between px, em and rem units?
+7.  What is the use of sprite image?
+8.  What is the use of calc()?
+9.  What are possible values of "Position" attributes what is difference between them?
+10.  What steps you will to to develop responsive UI/Screen?
+11.  How media queries help to develop an responsive UI/Screen?
