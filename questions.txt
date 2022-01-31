@@ -104,6 +104,27 @@ CSS
         background-color: #444;
         width: 200px;
       }
+6.  What is a CSS Preprocessor? What are Sass, Less, and Stylus? Why do people use them?
+    - CSS preprocessor is a tool used to extend the basic functionality of default vanilla CSS through its own scripting language.
+      It helps us to use complex  logical syntax like - variable, functions, mixins, code nesting and inheritance to supercharging 
+      your vanilla CSS.
+    
+    - SASS vs SCSS
+      - SASS is based on indentation and SCSS(Sassy CSS) is not.
+      - SASS uses .sass extension while SCSS uses .scss extension.
+      - SASS doesn’t use curly brackets or semicolons. SCSS uses it, just like the CSS.
+
+    - LESS: LESS is an acronym for “Leaner Stylesheets”. LESS is easy to add to any javascript projects by using NPM or less.js file. It uses
+      the extension .less.
+      LESS syntax is the same as the SCSS with some exceptions. LESS uses @ to define the variables.
+
+    - Stylus: Stylus offers a great deal of flexibility in writing syntax, supports native CSS as well as allows omission of brackets,
+      colons, and semicolons. It doesn’t use @ or $ for defining variables.
+
+7.  What is VH/VW (viewport height/ viewport width) in CSS?
+    - Its a CSS unit used to measure the height and width in percentage with respect to 'ViewPort'.
+    - It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the
+      browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
 
 4.  What is the default font-size of text in webpage?
 5.  What new feature introduced in CSS3
