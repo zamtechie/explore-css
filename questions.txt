@@ -126,6 +126,133 @@ CSS
     - It is used mainly in responsive design techniques. The measure VH is equal to 1/100 of the height of the viewport. If the height of the
       browser is 1000px, 1vh is equal to 10px. Similarly, if the width is 1000px, then 1 vw is equal to 10px.
 
+8.  Difference between reset vs normalize CSS?. How do they differ?
+    - Reset CSS: CSS resets aim to remove all built-in browser styling. For example margins, paddings, font-sizes of all elements are reset
+      to be the same. 
+
+    - Normalize CSS: Normalize CSS aims to make built-in browser styling consistent across browsers. It also corrects bugs for common browser dependencies.
+
+9.  What is the difference between inline, inline-block, and block?
+    - Block Element: The block elements always start on a new line. They will also take space for an entire row or width.
+      List of block elements are <div>, <p>.
+
+    - Inline Elements: Inline elements don't start on a new line, they appear on the same line as the content and tags beside them. Some examples of
+      inline elements are <a>, <span> , <strong>, and <img> tags. 
+
+    - Inline Block Elements: Inline-block elements are similar to inline elements, except they can have padding and margins and set height and width values
+
+10. What are Pseudo elements and Pseudo classes?
+    - Pseudo-elements allows us to create items that do not normally exist in the document tree, for example ::after.
+
+      ::before
+      ::after
+      ::first-letter
+      ::first-line
+      ::selection
+      In the below example, the color will appear only on the first line of the paragraph.
+
+      p: :first-line {
+	      color: #ffOOOO;
+	      font-variant: small-caps;
+      }
+
+    - Pseudo-classes select regular elements but under certain conditions like when the user is hovering over the link.
+
+      :link
+      :visited
+      :hover
+      :active
+      :focus
+      Example of the pseudo-class, In the below example, the color applies to the anchor tag when it’s hovered.
+
+      /* mouse over link */
+      a:hover {
+	      color: #FFOOFF;
+      }
+
+11. What are the differences between adaptive design and responsive design?
+    - Adaptive Design	
+      - Adaptive design focuses on developing websites based on multiple fixed layout sizes.	
+      - When a website developed using adaptive design is opened on the desktop browser, first the available space is detected and then the layout
+        with most appropriate sizes are picked and used for the display of contents. Resizing of browser window has no affect on the design.	
+      - Usually, adaptive designs use six standard screen widths - 320 px, 480 px, 760 px, 960 px, 1200 px, 1600 px. 
+        These sizes are detected and appropriate layouts are loaded.	This design makes use of CSS media queries for changing styles depending on
+        the target devices properties for adapting to different screens.
+      - It takes a lot of time and effort to first examine the options and realities of the end users and then design best possible adaptive solutions them.	
+
+
+    - Responsive Design
+      - Responsive design focuses on showing content on the basis of available browser space.
+      - When a website developed using responsive design is opened on a desktop browser and when we try to resize the browser window, the content of
+        the website is dynamically and optimally rearranged to accomodate the window.
+      - Generally, Responsive design takes much less work to build and design fluid websites that can accomodate content from screen depending on the screen size.
+      - Gives a lot of control over the design to develop sites for specific screens. No much control over the design is offered here.
+
+12. How are the CSS selectors matched against the elements by the browser?
+    - The order of matching selectors goes from right to left of the selector expression.
+    - The elements in the DOM are filtered by browsers based on the key selectors and are then traversed up to the parent elements for determining the matches.
+    - The speed of determining the elements depends on the length of the chain of selectors.
+
+13. How is border-box different from content-box?
+    - content-box is the default value box-sizing property.
+      The height and the width properties consist only of the content by excluding the border and padding.
+      Eg:
+      div{
+          width:300px;
+          height:200px;
+          padding:15px;
+          border: 5px solid grey;
+          margin:30px;
+          -moz-box-sizing:content-box;
+          -webkit-box-sizing:content-box;
+          box-sizing:content-box;
+      }
+      Here, the box-sizing for the div element is given as content-box. That means, the height and width considered for the div content exclude the padding and border.
+
+    - The border-box property includes the content, padding and border in the height and width properties.
+      Eg:
+      div{
+          width:300px;
+          height:200px;
+          padding:15px;
+          border: 5px solid grey;
+          margin:30px;
+          -moz-box-sizing:border-box;
+          -webkit-box-sizing:border-box;
+          box-sizing:border-box;
+      }
+      Here, the box-sizing for the div element is given as border-box. That means the height and width considered for the div content will also include the padding and border.
+      This means that the actual height of the div content will be:
+
+      actual height = height - 
+                      padding on top and bottom - 
+                      border on top and bottom
+                    = 200 - (15*2) - (5*2) 
+                    = 160 px
+      and the actual width of the div content would be:
+
+      actual width  = width - 
+                      padding on right and left - 
+                      border on right and left
+                    = 300 - (15*2) - (5*2) 
+                    = 260 px
+
+14. How is opacity specified in CSS3?
+    - Opacity refers to the degree to which the content is transparent or opaque. We can use the property named opacity which takes the values ranging from 0 to 1.
+    0 specifies that the element is completely transparent where 1 means that the element is completely opaque.
+
+15. What is a z-index, how does it function?
+    - z-index is used for specifying the vertical stacking of the overlapping elements that occur at the time of its positioning. It specifies the vertical
+      stack order of the elements positioned that helps to define how the display of elements should happen in cases of overlapping.
+
+      The default value of this property is 0 and can be either positive or negative. Apart from 0, the values of the z-index can be:
+
+      Auto: The stack order will be set equal to the parent.
+      Number: The number can be positive or negative. It defines the stack order.
+      Initial: The default value of 0 is set to the property.
+      Inherit: The properties are inherited from the parent.
+      The elements having a lesser value of z-index is stacked lower than the ones with a higher z-index.
+      
 4.  What is the default font-size of text in webpage?
 5.  What new feature introduced in CSS3
 6.  Difference between px, em and rem units?
