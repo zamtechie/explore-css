@@ -4,10 +4,10 @@ CSS
 1.  What is Box Model in css
     - 'Box Model is essentially a box wrapped around every HTML element.
       It consist of margin, border, padding and the actual content
-      1.  Margin: Is the space between the current element and neibouring elements and it is transparent
-      2.  Border: It goes around the padding and actual content, its between Margin and Padding.
-      3.  Padding: Padding is the space between the actual content and margin, it is transparent
-      4.  Content: It is the content of the box where text or image is displayed.
+      1.  Content:  Actual Content of the box where the text or image is placed.
+      2.  Padding: Area surrounding the content (Space between the border and content).
+      3.  Border: Area surrounding the padding.
+      4.  Margin: Area surrounding the border
 
 2.  What are CSS positions?
     - position property specifies types of positioning method is used for an element.
@@ -26,6 +26,84 @@ CSS
 
 3.  Capitalize first character of each word 'center me'
     - text-transform: capitalize
+
+4.  What are the limitations of CSS?
+    - Disadvantages of CSS are given below:
+      - Browser Compatibility: Some style selectors are supported and some are not. We have to determine which style is 
+        supported or not using the @support selector).
+      - Cross Browser issue: Some selectors behave differently in a different browser).
+      - There is no parent selector: Currently, Using CSS, you can’t select a parent tag.
+
+5.  What are the different types of Selectors in CSS?
+
+    - Universal Selector: The Universal selector is like a wilcard character, selecting all the elements
+      of the page.
+      Eg: 
+      * {
+          color: "gree"
+        }
+
+    - Element type Selector: This selector matches one or more HTML elements of the same name.
+      Eg: 
+      ul {
+        line-style: none;  
+      }
+
+    - ID Selector:  This selector matches any HTML element that has an ID attribute with the same value as that 
+      of the selector.
+      Eg:
+      #container {
+        width: 960px;
+      }
+
+    - Class Selector: The class selector also matches all elements on the page that have their class attribute set
+      to the same value as the class. 
+      Eg:
+      .box {
+        padding: 10px;
+        margin: 10px;
+        width: 240px;
+      }
+
+    - Descendant Combinator: The descendant selector or, more accurately, the descendant combinator lets you combine two or more
+      selectors so you can be more specific in your selection method.
+      Eg:
+      #container .box {
+        float: left;
+        padding-bottom: 15px;
+      }
+
+    - Child Combinator: A selector that uses the child combinator is similar to a selector that uses a descendant combinator, except
+      it only targets immediate child elements.
+      Eg:
+      #container> .box {
+        float: left;
+        padding-bottom: 15px;
+      }
+
+    - General Sibling Combinator: A selector that uses a general sibling combinator to match elements based on sibling relationships.
+      The selected elements are beside each other in the HTML.
+      Eg:
+      h2 ~ p {
+        margin-bottom: 20px;
+      }
+
+    - Adjacent Sibling Combinator: A selector that uses the adjacent sibling combinator uses the plus symbol (+), and is almost the
+      same as the general sibling selector. The difference is that the targeted element must be an immediate sibling, not just a
+      general sibling.
+      Eg:
+      p + p {
+        text-indent: 1.Sem;
+        margin-bottom: 0;
+      }
+
+    - Attribute Selector: The attribute selector targets elements based on the presence and/or value of HTML attributes, and is 
+      declared using square brackets.
+      Eg:
+      input [type=”text”] {
+        background-color: #444;
+        width: 200px;
+      }
 
 4.  What is the default font-size of text in webpage?
 5.  What new feature introduced in CSS3
